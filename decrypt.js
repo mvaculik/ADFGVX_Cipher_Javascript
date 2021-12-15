@@ -173,21 +173,24 @@ function decrypt() {
             x = document.getElementsByClassName(mode)[k].getAttribute("data-row");
             y = document.getElementsByClassName(mode)[k].getAttribute("data-col");
 
+
             // console.log("X " + x);
-            // console.log("Y " + y);
+            // console.log(dict);
             
             if(co1 == x && co2 == y) {
-                arr2 += document.getElementsByClassName(mode)[k].getAttribute("value");
-                
+
+                arr2 += matrix[k];
+
+
                 console.log("Row: " + co1);
                 console.log("Column: " + co2);
 
-                console.log("VALUE " + document.getElementsByClassName(mode)[k].getAttribute("value"));
+                console.log("VALUE " + matrix[k]);
                 console.log("--------------------");
 
                 print += '<li>' + "Row: " + co1 + '</li>'
                 print += '<li>' + "Column: " + co2 + '</li>'
-                print += '<li>' + '<b>' + "Result: " + document.getElementsByClassName(mode)[k].getAttribute("value")+ '</b>' + '</li>'
+                print += '<li>' + '<b>' + "Result: " + matrix[k] + '</b>' + '</li>'
                 print += '<li>' + "--------------------" + '</li>'
                 list.innerHTML = print
                 break;

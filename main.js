@@ -3,6 +3,7 @@ var characters = '';
 var language = 'cz';
 var arr = [];
 var mode = 'small';
+const tester = [];
 
 let list = document.querySelector('.console-input')
 let print = ''
@@ -267,6 +268,7 @@ function save(matrix) {
     }
 
     console.log("MATRIX: " + matrix);
+
     // document.getElementById("console-output").innerHTML = "Matrix saved: " + matrix;
     var modeS;
     var squareS;
